@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Psychic Game</title>
+    <script src="psychic.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <h1>The Psychic Game</h1>
+    <h2>Guess what letter I'm thinking of</h2>
+    <div>
+        <h2>Wins: </h2>
+    </div>
+
+    <div>
+        <h2>Loses: </h2>
+    </div>
+
+    <div>
+        <h2>Guesses Left:</h2>
+    </div>
+
+    <div>
+        <h2>Your Guesses So Far: <span id="user-text"><strong>...Nothing.</strong></span></h2>
+
+    </div>
+
+    <script>
+        // Array of possible answers
+
+        var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "_"];
+
+        var userText = document.getElementById("user-text");
+
+        // Computer randomly selects a letter
+
+        $(document).ready(function () {
+
+            for (var i = 0; i < letters.length; i++) {
+
+
+                letters[Math.floor(Math.random() * letters.length)];
+                console.log("checking")
+            }
+
+
+            // Display the number of Wins
+
+
+
+            // Display the number of Losses
+
+
+            // User Enters
+
+
+
+
+
+        });
+
+        document.onkeyup = function (event) {
+            userText.textContent = event.key;
+        }
+
+        console.log("hello world")
+    </script>
+
+</body>
+
+</html>
