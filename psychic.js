@@ -7,10 +7,46 @@ var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
 
 var randomLetter = letters[Math.floor(Math.random() * letters.length)];
 
-var userText = document.getElementById("user-text");
+var s;
 
+var count = 0;
+
+// Empty array to store guess
+
+var answerArray = [];
 
 // Display the string of randomNumber
+
+function startUp()
+(
+    answerArray[i] = "_"
+)
+
+// Put them in a string
+
+s = answerArray.join(" ");
+document.getElementById("answer").innerHTML = s;
+)
+
+function Letter()
+(
+    var letter = document.getElementById("letter").value;
+
+if (letter.length > 0)
+    (
+        for (var i = 0; i < randomLetter.length; i++)
+    (
+        answerArray[i] = letter;
+    )
+count++;
+document.getElementById("counter").innerHTML = "No of clicks; " + count;
+document.getElementById("answer").innerHTML = answerArray.join(" ");
+    )
+if (count > 5)
+    (
+
+)
+
 
 console.log(randomLetter)
 
