@@ -10,7 +10,11 @@
     <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
-<body>
+<script>
+
+</script>
+
+<body onload="startUp()">
     <h1>The Psychic Game</h1>
     <h2>Guess what letter I'm thinking of</h2>
     <div>
@@ -29,7 +33,11 @@
         <h2>Your Guesses So Far: <span id="user-text"><strong>...Nothing.</strong></span></h2>
 
     </div>
-
+    <input id="letter" type="text">
+    <input type="button" value="letter" onClick="Letter()" />
+    <p id="answer"></p>
+    <p id="counter"></p>
+    <p id="stat"></p>
 
 
 </body>

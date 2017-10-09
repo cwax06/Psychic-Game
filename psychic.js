@@ -11,6 +11,9 @@ var s;
 
 var count = 0;
 
+console.log(randomLetter)
+
+
 // Empty array to store guess
 
 var answerArray = [];
@@ -20,6 +23,7 @@ var answerArray = [];
 function startUp()
 (
     answerArray[i] = "_"
+
 )
 
 // Put them in a string
@@ -48,7 +52,6 @@ if (count > 5)
 )
 
 
-console.log(randomLetter)
 
 // compare randomly generated letter with user's input
 
